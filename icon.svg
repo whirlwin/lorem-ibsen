@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="10" fill="#1a1410"/>
+  <path d="M14 14 L14 50 M18 14 L18 50 M22 14 L22 50" stroke="#c2a058" stroke-width="1" opacity="0.7"/>
+  <path d="M28 18 Q32 14 36 18 L36 46 Q32 50 28 46 Z" fill="#8b2a2a"/>
+  <path d="M36 18 Q40 14 44 18 L44 46 Q40 50 36 46" fill="#c45656" opacity="0.85"/>
+  <path d="M44 18 Q48 14 50 18 L50 46 Q48 50 44 46" fill="#8b2a2a" opacity="0.7"/>
+  <text x="32" y="62" font-family="Georgia,serif" font-size="6" font-style="italic" fill="#c2a058" text-anchor="middle">ibsen</text>
+</svg>

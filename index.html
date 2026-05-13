@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>lorem ibsen — norsk fyllstoff fra Henrik Ibsen</title>
+  <meta name="description" content="Lorem ipsum, men på dano-norsk og hentet fra Henrik Ibsens stykker. Et hjemløst alternativ for design og utkast." />
+  <meta name="theme-color" content="#1a1410" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="lorem ibsen — norsk fyllstoff" />
+  <meta property="og:description" content="Lorem ipsum, men hentet fra Henrik Ibsens stykker. Et lite, fritt verktøy for design og utkast." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lorem-ibsen.whirlwin.io/" />
+
+  <link rel="icon" type="image/svg+xml" href="icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=Geist+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="lampshade" aria-hidden="true"></div>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <span class="cue" aria-hidden="true">Et lite stykke i en akt</span>
+      <h1 class="wordmark">
+        <span>lorem</span><em>ibsen</em>
+      </h1>
+      <p class="lede">
+        Norsk fyllstoff, hentet fra <em>Et&nbsp;dukkehjem</em>, <em>Peer&nbsp;Gynt</em>
+        og andre stykker av <span class="nowrap">Henrik&nbsp;Ibsen</span>. Til
+        utkast, gjøremål og makulatur — der hvor <em>lorem&nbsp;ipsum</em>
+        ikke holder mål.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section class="console" aria-label="Generer">
+      <div class="row mode" role="radiogroup" aria-label="Type">
+        <label><input type="radio" name="mode" value="paragraphs" checked /> <span>avsnitt</span></label>
+        <label><input type="radio" name="mode" value="sentences" /> <span>setninger</span></label>
+        <label><input type="radio" name="mode" value="words" /> <span>ord</span></label>
+      </div>
+
+      <div class="row count">
+        <label for="count" class="count-label">Antall</label>
+        <input id="count" type="number" min="1" max="50" value="3" inputmode="numeric" />
+        <button id="generate" class="btn primary" type="button">Generer</button>
+        <button id="copy" class="btn ghost" type="button" disabled>Kopier</button>
+        <span id="status" class="status" aria-live="polite"></span>
+      </div>
+    </section>
+
+    <article class="stage" aria-label="Generert tekst">
+      <div id="out" class="text" tabindex="0"></div>
+    </article>
+
+    <section class="colophon">
+      <h2>Om dette</h2>
+      <p>
+        Henrik Ibsen døde i 1906. Verkene hans er fritt tilgjengelig og brukes her
+        som plassholdertekst — fordi norske utkast fortjener noe bedre enn
+        latinske setninger om griser og smerte.
+      </p>
+      <p class="meta">
+        Kilder: <a href="https://no.wikisource.org/wiki/Et_Dukkehjem" rel="noreferrer noopener">Et&nbsp;Dukkehjem</a> ·
+        <a href="https://no.wikisource.org/wiki/Peer_Gynt" rel="noreferrer noopener">Peer&nbsp;Gynt</a>
+        via Wikikilden.
+      </p>
+    </section>
+  </main>
+
+  <footer class="curtain">
+    <span>publisert fra <a href="https://codeberg.org/whirlwin/lorem-ibsen" rel="noreferrer noopener">codeberg.org/whirlwin/lorem-ibsen</a></span>
+    <span class="dot" aria-hidden="true">·</span>
+    <span>en <a href="https://whirlwin.io" rel="noreferrer noopener">whirlwin</a>-side</span>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
