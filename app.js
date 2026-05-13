@@ -1,4 +1,4 @@
-import { SENTENCES, WORDS } from "./corpus.js";
+import { SENTENCES, WORDS } from "./corpus.js?v=2";
 
 const $ = (sel) => document.querySelector(sel);
 
